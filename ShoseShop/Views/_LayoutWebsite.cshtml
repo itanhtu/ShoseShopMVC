@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/css/flexslider.css" rel="stylesheet" />
+    <link href="~/Content/css/styles.css" rel="stylesheet" />
+    <link href="~/Content/css/sidebar.css" rel="stylesheet" />
+    <link href="~/Content/css/newcss.css" rel="stylesheet" />
+    <link href="~/Content/css/checkout.css" rel="stylesheet" />
+    <link href="~/Content/css/fonts.css" rel="stylesheet" />
+    <link href="~/Content/css/push-menu.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper relative">
+            <header class="header-fixed clearfix">
+                <div class="free-shipping">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="top-header">
+                                    <div class="text-icon">
+                                        <img src="/images/home.png" class="img-icon" />
+                                        Zalo 
+                                    </div>
+                                    <div class="text-icon">
+                                        <img src="/images/cod.png" class="img-icon" />
+                                        0123456789
+                                    </div>
+                                    <div class="text-icon">
+                                        <img src="/images/100authentic.png" class="img-icon" />
+                                        Chất lượng cao cấp
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative clearfix">
+                    <div class="container clearfix wrap-logo">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12 ">
+                                <div class="logo">
+                                    <!-- LOGO -->
+                                    <a href="/" title="Shop giày">
+                                        <img src="/images/logo.png" class="img-responsive" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                            </div>
+                            <div class="col-lg-4 col-md-9 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-9 col-sm-12 col-xs-12 <%--header-right--%>">
+                                        <p class="footer-formm">
+                                            <input type="search" name="search" id="txt_KeySearch" class="input-search" placeholder="Từ khóa tìm kiếm..." />
+                                            <a class="button search" id="timkiem"><i class="fa fa-search"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header menu-scroll" id="menu-scroll">
+                    <div class="container">
+                        <input type="checkbox" id="chk" />
+                        <label for="chk" class="show-menu-btn">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </label>
+                        <ul class="menu">
+                            <li class="drop-menu-y">
+                                <a href="/">Trang Chủ</a>
+                            </li>
+                            <li class="drop-menu-y">
+                                <a href="/gioi-thieu">Giới Thiệu</a>
+                            </li>
+                            <li class="drop-menu-y">
+                                <a href="/tin-tuc">Tin Tức</a>
+                            </li>
+                            <li class="drop-menu-y">
+                                <a href="/lien-he">Liên Hệ</a>
+                            </li>
+                            <li class="drop-menu-y">
+                                <a href="/gio-hang">Giỏ hàng</a>
+                            </li>
+                            <li class="drop-menu-y">
+                                <a href="#">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            @RenderBody()
+            <footer>
+                <!--footer-->
+                <div id="footer-info">
+                    <div class="menu-footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="linewhite">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <p class="txtalign copyright">
+                                    </p>
+                                    <h1 style="text-align: center"><span style="color: #00804d">&copy <strong>Shop giày</strong></span></h1>
+                                    <p style="text-align: center; line-height: 1.7">Một danh nhân đã từng nói: “Một đôi giầy có thể thay đổi cuộc đời bạn”. Quả thật, một đôi giày tốt sẽ làm bạn thoải mái, một đôi giày đẹp sẽ khiến bạn tự tin.</p>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <p class="txtalign copyright">
+                                    </p>
+
+                                    <h1 style="text-align: center"><span style="color: #00804d"><strong>LIÊN HỆ</strong></span></h1>
+                                            <p style="text-align: center">Địa chỉ :</p>
+
+                                            <p style="text-align: center">Email : <a href="mailto:<%# Eval(" contact_email")%>"></a></p>
+
+                                            <p style="text-align: center"><span style="color: #FF0000"><strong>Hotline</strong>: <strong></strong></span></p>
+
+                                            <p style="text-align: center"></p>
+                                    <p></p>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <p class="txtalign copyright">
+                                    </p>
+                                    <h1 style="text-align: center"><span style="color: #0099ff"><strong>BẢN ĐỒ </strong></span></h1>
+                                    <div class="map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38111.86483924504!2d108.18651087652536!3d16.050278943525182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c792252a13%3A0xfc14e3a044436487!2zxJDDoCBO4bq1bmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1589505635103!5m2!1svi!2s" width="100%" height="120" frameborder="0" style="border: 0;" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="chungnhan">
+                                        <li class="visa">
+                                            visa
+                                        </li>
+                                        <li class="mastercard">
+                                            mastercard
+                                        </li>
+                                        <li class="amex">
+                                            amex
+                                        </li>
+                                        <li class="cirrus">
+                                            cirrus
+                                        </li>
+                                        <li class="paypal">
+                                            paypal
+                                        </li>
+                                        <div class="clr"></div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+            </footer>
+            <!--Scroll to Top-->
+            <a href="#" class="scrollToTop">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+    </form>
+</body>
+</html>
