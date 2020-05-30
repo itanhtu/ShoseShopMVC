@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -96,7 +102,32 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap-spinedit.css" />
+    <Content Include="Content\css\bootstrap.3.3.1.css" />
+    <Content Include="Content\css\checkout.css" />
+    <Content Include="Content\css\flexslider.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\fonts.css" />
+    <Content Include="Content\css\haravantheme.1.0.css" />
+    <Content Include="Content\css\magiczoomplus.css" />
+    <Content Include="Content\css\newcss.css" />
+    <Content Include="Content\css\owl.carousel.css" />
+    <Content Include="Content\css\push-menu.css" />
+    <Content Include="Content\css\sidebar.css" />
+    <Content Include="Content\css\styles.css" />
     <Content Include="Global.asax" />
+    <Content Include="images\100authentic.png" />
+    <Content Include="images\American_Express.png" />
+    <Content Include="images\cirrus.png" />
+    <Content Include="images\cod.png" />
+    <Content Include="images\favicon.png" />
+    <Content Include="images\home.png" />
+    <Content Include="images\icon-tieptuc.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\mastercard.png" />
+    <Content Include="images\paypal.png" />
+    <Content Include="images\radio-checked.png" />
+    <Content Include="images\visa.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -125,6 +156,24 @@
     <Content Include="Scripts\jquery-3.0.0.min.js" />
     <Content Include="Scripts\jquery-3.0.0.slim.js" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\js\addthis_widget.js" />
+    <Content Include="Scripts\js\api.jquery.js" />
+    <Content Include="Scripts\js\bootstrap-spinedit.js" />
+    <Content Include="Scripts\js\bootstrap.min.js" />
+    <Content Include="Scripts\js\fixheightproduct.js" />
+    <Content Include="Scripts\js\haravan.plugin.1.0.js" />
+    <Content Include="Scripts\js\html5shiv.js" />
+    <Content Include="Scripts\js\jcarousellite_1.0.1c4.js" />
+    <Content Include="Scripts\js\jquery-migrate-1.2.0.min.js" />
+    <Content Include="Scripts\js\jquery.flexslider.js" />
+    <Content Include="Scripts\js\jquery.min.1.11.0.js" />
+    <Content Include="Scripts\js\magiczoomplus.js" />
+    <Content Include="Scripts\js\newjs.js" />
+    <Content Include="Scripts\js\option_selection.js" />
+    <Content Include="Scripts\js\owl.carousel.js" />
+    <Content Include="Scripts\js\push-menu.js" />
+    <Content Include="Scripts\js\scripts.js" />
+    <Content Include="Scripts\js\scripts.min.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
@@ -196,6 +245,32 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="uploadimages\11-1.jpg" />
+    <Content Include="uploadimages\15-1.jpg" />
+    <Content Include="uploadimages\1sdsfd-1.jpg" />
+    <Content Include="uploadimages\2000596_L.jpg" />
+    <Content Include="uploadimages\94220709_3044959748953046_1855043795876315136_n.jpg" />
+    <Content Include="uploadimages\94333456_3044988798950141_6693899971848044544_n.jpg" />
+    <Content Include="uploadimages\94453733_3044943308954690_2918868411540832256_n.jpg" />
+    <Content Include="uploadimages\94518700_3044988805616807_6102696473718161408_n.jpg" />
+    <Content Include="uploadimages\94539257_3044988745616813_1465561382492569600_n.jpg" />
+    <Content Include="uploadimages\94553797_3044988738950147_7128344031326633984_n.jpg" />
+    <Content Include="uploadimages\adidas-nmd-hu-solar-aqua-replica.jpg" />
+    <Content Include="uploadimages\anhslide\ep2vnumu.ebu.jpg" />
+    <Content Include="uploadimages\bandicam-2019-11-26-10-05-13-022.jpg" />
+    <Content Include="uploadimages\giay-nike-cortex-trang-vang.jpg" />
+    <Content Include="uploadimages\giay_nike_joyride_run_flyknit_pink-600x600.jpg" />
+    <Content Include="uploadimages\Giay_Nite_Jogger_Mau_trang_FU6843_01_standard.jpg" />
+    <Content Include="uploadimages\giay_sneaker_must_korea_nu_i01_935c.jpg" />
+    <Content Include="uploadimages\Giay_Superstar_Mau_trang_FV3289_01_standard.jpg" />
+    <Content Include="uploadimages\Giay_Vulc_Continental_Mau_hong_EG2681_01_standard.jpg" />
+    <Content Include="uploadimages\Giay_ZX_Torsion_Mau_xanh_duong_EF4375_01_standard.jpg" />
+    <Content Include="uploadimages\gucci-White-Ace-Studded-Leather-Sneaker.jpeg" />
+    <Content Include="uploadimages\img01.jpg" />
+    <Content Include="uploadimages\m_4306114341_01.jpg" />
+    <Content Include="uploadimages\nike-air-jordan-do-den-88.jpg" />
+    <Content Include="uploadimages\ULTRABOOST_20_City_Pack_Hype_Mau_djo_FX7817_01_standard.jpg" />
+    <Content Include="uploadimages\we34.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +298,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Website\Category.cshtml" />
+    <Content Include="Views\Website\Slide.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -232,7 +309,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\css\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -240,6 +316,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShoseShopDB\ShoseShopDB.csproj">
+      <Project>{4e382c11-eebd-4290-adef-d775adbfaead}</Project>
+      <Name>ShoseShopDB</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

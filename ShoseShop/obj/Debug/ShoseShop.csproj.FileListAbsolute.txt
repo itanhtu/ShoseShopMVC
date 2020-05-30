@@ -70,3 +70,10 @@ D:\MVC\ShoseShop\ShoseShop\obj\Debug\ShoseShop.csproj.CoreCompileInputs.cache
 D:\MVC\ShoseShop\ShoseShop\obj\Debug\ShoseShop.csproj.CopyComplete
 D:\MVC\ShoseShop\ShoseShop\obj\Debug\ShoseShop.dll
 D:\MVC\ShoseShop\ShoseShop\obj\Debug\ShoseShop.pdb
+D:\MVC\ShoseShop\ShoseShop\bin\EntityFramework.dll
+D:\MVC\ShoseShop\ShoseShop\bin\EntityFramework.SqlServer.dll
+D:\MVC\ShoseShop\ShoseShop\bin\ShoseShopDB.dll
+D:\MVC\ShoseShop\ShoseShop\bin\ShoseShopDB.pdb
+D:\MVC\ShoseShop\ShoseShop\bin\ShoseShopDB.dll.config
+D:\MVC\ShoseShop\ShoseShop\bin\EntityFramework.xml
+D:\MVC\ShoseShop\ShoseShop\bin\EntityFramework.SqlServer.xml

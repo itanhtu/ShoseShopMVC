@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ShoseShopDB.Entities.tbProductCate>
+
+<div class="col-lg-3 col-md-3  hidden-sm hidden-xs">
+    <div id="cssmenuu">
+        <ul>
+            <li class="active-head">
+                <img src="" style="padding:20px"><span>Danh Mục Sản Phẩm</span>
+            </li>
+            @foreach (var item in Model)
+            {
+                <li class="has-sub">
+                    <a href="#">
+                        <span>@item.productcate_title</span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
