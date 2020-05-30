@@ -1,0 +1,79 @@
+﻿@model IEnumerable<ShoseShopDB.Entities.tbProductCate>
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/_LayoutWebsite.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        @{
+            Html.RenderAction("Category", "Website");
+        }
+        @{
+            Html.RenderAction("Slide", "Website");
+        }
+    </div>
+</div>
+<section id="content" class="clearfix">
+    <style>
+        .aabb h2:hover {
+            color: green;
+        }
+        .link h4:hover{
+            color:green;
+        }
+}
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="main-content">
+                    <div class="product-list clearfix borderleft">
+                        @foreach (var item in Model)
+                        {
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="title-line">
+                                        <div class="clr">
+                                            <a class="aabb" href="#">
+                                                <h2 style="font-size: 30px">@item.productcate_title</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                @foreach (var product in item.tbProducts)
+                                {
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="card">
+                                        <a href="#"><img src="@product.product_image" style="height:300px;border: ridge 1px;" class="card-img" /></a>
+                                        <div class="card-body">
+                                            <a class="link" href="#"><h4 class="card-title" style="text-transform:uppercase;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">@product.product_title</h4></a>
+                                            <a href="#" class="btn">Chi tiết</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                }
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12 marginbottom show">
+                                    <div class="view-all">
+                                        <a href="#" class="btn">Xem tất cả →</a>
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
