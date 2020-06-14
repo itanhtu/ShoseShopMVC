@@ -13,6 +13,12 @@ namespace ShoseShop
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapRoute(
+                name: "New",
+                url: "tin-tuc",
+                defaults: new { controller = "Website", action = "New", id = UrlParameter.Optional }
+            );
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.MapRoute(
                 name: "Introduce",
                 url: "gioi-thieu",
                 defaults: new { controller = "Website", action = "Introduce", id = UrlParameter.Optional }

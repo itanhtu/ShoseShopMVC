@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ShoseShopDB.Entities.tbNew>
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/_LayoutWebsite.cshtml";
+}
+
+    <div class="container">
+        <hr>
+        <h2>Tin tức</h2>
+        <hr>
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-sm-2">
+                    <a href="/tin-tuc">
+                        <img src="@item.news_image" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-sm-10">
+                    <h3 class="article-titile"><a href="/tin-tuc/@cls_ToAscii.ToAscii(item.news_title)-@item.news_id">@item.news_title</a></h3>
+                    <i class="far fa-clock"></i><span style="margin-left:5px;color:#b5b4b1">@item.news_datetime</span>
+                    <p>@item.news_summary</p>
+                </div>
+            </div>
+            <hr>
+        }
+        @*<asp:Repeater ID="rpNew" runat="server">
+            <ItemTemplate>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <a href="/tin-tuc">
+                            <img src="<%#Eval(" news_image") %>" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-sm-10">
+                        <h3 class="article-titile"><a href="/tin-tuc/<%#cls_ToAscii.ToAscii(Eval(" news_title").ToString()) %>-<%#Eval("news_id") %>"><%#Eval("news_title") %></a></h3>
+                        <i class="far fa-clock"></i><span style="margin-left:5px;color:#b5b4b1"><%#String.Format("{0:dd/MM/yyyy}", Eval("news_datetime")) %></span>
+                        <p><%#Eval("news_summary") %></p>
+                    </div>
+                </div>
+                <hr>
+            </ItemTemplate>
+        </asp:Repeater>*@
+    </div>
+
+

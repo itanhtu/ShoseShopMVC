@@ -36,5 +36,10 @@ namespace ShoseShop.Controllers
             var introduce = db.tbIntroduces.First();
             return Json(introduce,JsonRequestBehavior.AllowGet);
         }
+        public ViewResult New()
+        {
+            var listNew = db.tbNews.ToList();
+            return View(listNew);
+        }
     }
 }

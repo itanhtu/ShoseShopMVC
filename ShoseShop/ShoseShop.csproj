@@ -256,6 +256,20 @@
     <Content Include="uploadimages\94553797_3044988738950147_7128344031326633984_n.jpg" />
     <Content Include="uploadimages\adidas-nmd-hu-solar-aqua-replica.jpg" />
     <Content Include="uploadimages\anhslide\ep2vnumu.ebu.jpg" />
+    <Content Include="uploadimages\anhtintuc\0ixyi3u0.533.jpg" />
+    <Content Include="uploadimages\anhtintuc\23.png" />
+    <Content Include="uploadimages\anhtintuc\5ih4hjm3.w3r.jpg" />
+    <Content Include="uploadimages\anhtintuc\5xc1y1nj.i54.jpg" />
+    <Content Include="uploadimages\anhtintuc\ay1um4ae.moo.jpg" />
+    <Content Include="uploadimages\anhtintuc\b0sfyslw.mac.png" />
+    <Content Include="uploadimages\anhtintuc\beu51nic.leu.png" />
+    <Content Include="uploadimages\anhtintuc\ccigp03z.2zk.jpg" />
+    <Content Include="uploadimages\anhtintuc\cdxjtwzy.2p4.jpg" />
+    <Content Include="uploadimages\anhtintuc\djgd3tfl.fq5.jpg" />
+    <Content Include="uploadimages\anhtintuc\ejubyajy.zwp.jpg" />
+    <Content Include="uploadimages\anhtintuc\feh2cyd4.zno.jpg" />
+    <Content Include="uploadimages\anhtintuc\idiqxw3o.knb.jpg" />
+    <Content Include="uploadimages\anhtintuc\kn1awsqp.2ci.jpg" />
     <Content Include="uploadimages\bandicam-2019-11-26-10-05-13-022.jpg" />
     <Content Include="uploadimages\giay-nike-cortex-trang-vang.jpg" />
     <Content Include="uploadimages\giay_nike_joyride_run_flyknit_pink-600x600.jpg" />
@@ -274,6 +288,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Content\cls_ToAscii.cs" />
     <Compile Include="Controllers\WebsiteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -300,6 +315,7 @@
     <Content Include="Views\Website\Category.cshtml" />
     <Content Include="Views\Website\Slide.cshtml" />
     <Content Include="Views\Website\Introduce.cshtml" />
+    <Content Include="Views\Website\New.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
