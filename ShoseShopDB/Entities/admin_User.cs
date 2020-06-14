@@ -12,6 +12,7 @@ namespace ShoseShopDB.Entities
         public admin_User()
         {
             admin_AccessUserForm = new HashSet<admin_AccessUserForm>();
+            admin_AccessUserForm1 = new HashSet<admin_AccessUserForm>();
         }
 
         [Key]
@@ -29,12 +30,17 @@ namespace ShoseShopDB.Entities
 
         public string username_email { get; set; }
 
+        public bool? username_active { get; set; }
+
         public int? groupuser_id { get; set; }
 
         public bool? hide { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<admin_AccessUserForm> admin_AccessUserForm { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<admin_AccessUserForm> admin_AccessUserForm1 { get; set; }
 
         public virtual admin_GroupUser admin_GroupUser { get; set; }
     }

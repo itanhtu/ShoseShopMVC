@@ -57,8 +57,10 @@
     <Compile Include="Entities\admin_GroupUser.cs" />
     <Compile Include="Entities\admin_Module.cs" />
     <Compile Include="Entities\admin_User.cs" />
-    <Compile Include="Concrete\ShoseShopEntities.cs" />
+    <Compile Include="Entities\C__MigrationHistory.cs" />
+    <Compile Include="Entities\ShoseShopEntities.cs" />
     <Compile Include="Entities\tbContact.cs" />
+    <Compile Include="Entities\tbContactCustomer.cs" />
     <Compile Include="Entities\tbCustomer.cs" />
     <Compile Include="Entities\tbCustomerFeedback.cs" />
     <Compile Include="Entities\tbIntroduce.cs" />
@@ -76,6 +78,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Concrete\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

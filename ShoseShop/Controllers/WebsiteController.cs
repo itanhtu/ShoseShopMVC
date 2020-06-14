@@ -26,5 +26,15 @@ namespace ShoseShop.Controllers
             var listSlide = db.tbSlides.ToList();
             return PartialView(listSlide);
         }
+        public ViewResult Introduce()
+        {
+            return View();
+        }
+        [HttpGet]
+        public JsonResult IntroduceAjax()
+        {
+            var introduce = db.tbIntroduces.First();
+            return Json(introduce,JsonRequestBehavior.AllowGet);
+        }
     }
 }

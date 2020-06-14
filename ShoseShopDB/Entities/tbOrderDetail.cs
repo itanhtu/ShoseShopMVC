@@ -23,6 +23,10 @@ namespace ShoseShopDB.Entities
 
         public virtual tbOrder tbOrder { get; set; }
 
+        public virtual tbOrder tbOrder1 { get; set; }
+
         public virtual tbProduct tbProduct { get; set; }
+
+        public virtual tbProduct tbProduct1 { get; set; }
     }
 }

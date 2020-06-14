@@ -13,6 +13,7 @@ namespace ShoseShopDB.Entities
         public tbOrder()
         {
             tbOrderDetails = new HashSet<tbOrderDetail>();
+            tbOrderDetails1 = new HashSet<tbOrderDetail>();
         }
 
         [Key]
@@ -30,9 +31,12 @@ namespace ShoseShopDB.Entities
 
         public int? user_id { get; set; }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tbOrderDetail> tbOrderDetails { get; set; }
+
         public virtual tbUser tbUser { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tbOrderDetail> tbOrderDetails { get; set; }
+        public virtual ICollection<tbOrderDetail> tbOrderDetails1 { get; set; }
     }
 }

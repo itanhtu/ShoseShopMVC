@@ -120,7 +120,6 @@
     <Content Include="images\American_Express.png" />
     <Content Include="images\cirrus.png" />
     <Content Include="images\cod.png" />
-    <Content Include="images\favicon.png" />
     <Content Include="images\home.png" />
     <Content Include="images\icon-tieptuc.png" />
     <Content Include="images\logo.png" />
@@ -300,6 +299,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Website\Category.cshtml" />
     <Content Include="Views\Website\Slide.cshtml" />
+    <Content Include="Views\Website\Introduce.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -20,5 +20,9 @@ namespace ShoseShopDB.Entities
         public virtual admin_Form admin_Form { get; set; }
 
         public virtual admin_User admin_User { get; set; }
+
+        public virtual admin_Form admin_Form1 { get; set; }
+
+        public virtual admin_User admin_User1 { get; set; }
     }
 }

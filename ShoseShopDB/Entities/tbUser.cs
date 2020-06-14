@@ -14,6 +14,7 @@ namespace ShoseShopDB.Entities
         {
             tbOrders = new HashSet<tbOrder>();
             tbSumCarts = new HashSet<tbSumCart>();
+            tbSumCarts1 = new HashSet<tbSumCart>();
         }
 
         [Key]
@@ -36,5 +37,8 @@ namespace ShoseShopDB.Entities
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tbSumCart> tbSumCarts { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tbSumCart> tbSumCarts1 { get; set; }
     }
 }
